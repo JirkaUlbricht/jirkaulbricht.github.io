@@ -167,8 +167,8 @@ p {
 }
 #testimonials .testimonial {
     padding: 20px;
-    margin-bottom: 50px;
-    border-radius: 5px;
+    margin-bottom: 40px;
+    border-radius: 10px;
     opacity: 0.9;
     -webkit-text-stroke: 0.05em black;
     color: white;
