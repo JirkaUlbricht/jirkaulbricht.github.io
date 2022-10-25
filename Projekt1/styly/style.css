@@ -20,7 +20,7 @@
 #navbar ul li a:hover,
 #navbar ul li a.current {
     background: #444444;
-    color: #f7c08a;
+    color: #ff9900;
 }
 
 
@@ -36,7 +36,7 @@
     padding: 0 20px;
 }
 .text-primary{
-    color: #f7c08a;
+    color: #ff9900;
 }
 .lead {
     font-size: 20px;
@@ -104,7 +104,7 @@ p {
     cursor: pointer;
 }
 .btn:hover {
-    background: #f7c08a;
+    background: #ff9900;
     color: #333333;
 }
 .btn-light {
