@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.text-primary {
+    color: #92cb52;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+#logo {
+    font-size: larger;
+    font-weight: bold;
+}
+#navbar {
+    background: #333333;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+#navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li a {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+    background: ;
+}
+
+#showcase {
+    background:  #333333 url("https://source.unsplash.com/random");
+    height: 100vh;
+}
