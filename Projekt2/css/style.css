@@ -43,10 +43,11 @@ p {
     margin: 0 0.25rem;
 }
 #navbar ul li a:hover {
-    background: ;
+    background-color: dodgerblue;
+    border-radius: 5px;
 }
 
 #showcase {
-    background:  #333333 url("https://source.unsplash.com/random/?=tank");
+    background: #333333 url("https://source.unsplash.com/919jJxa7D1I") no-repeat;
     height: 100vh;
 }
