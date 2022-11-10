@@ -43,6 +43,9 @@ body {
 p {
     margin: 0.75rem 0;
 }
+.text-w {
+    color: white;
+}
 .bg-light {
     background-color: #333333;
     color: white;
@@ -79,13 +82,13 @@ p {
 .btn {
     display: inline-block;
     color: #fff;
-    background: #93cb52;
+    background: #7ab;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
 }
 .btn:hover {
-    background-color: #7ab;
+    background-color: dodgerblue;
 }
 .btn-dark {
 
@@ -138,7 +141,7 @@ a {
     align-items: center;
     text-align: center;
     padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #about .items {
@@ -151,7 +154,7 @@ a {
     flex: 1;
 }
 #about .items .item i {
-    background-color: #93cb52;
+    background-color: #dodgerblue;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 50%;
