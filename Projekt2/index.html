@@ -27,39 +27,111 @@
 </nav>
 <section id="showcase">
     <div class="showcase-content">
-        <h1 class="l-heading">Text</h1>
-        <p class="lead">Text</p>
-        <a href="#about" class="btn">Text</a>
+        <h1 class="l-heading">Tankové Muzeum Praha</h1>
+        <p class="lead">Výtejte na stránkách Tankového muzea Praha</p>
+        <a href="#about" class="btn">O nás</a>
     </div>
     <div class="source">Photo by <a href="https://unsplash.com/@ma510" target="_blank">ma510</a></div>
 </section>
-<section id="about">
+<section id="about" class="bg-light py-1">
     <div class="container">
         <h2 class="m-heading text-center"><span class="text-primary">O nás</span></h2>
         <div class="items">
             <div class="item">
-                <i class="fas fa fa-book fa-2x"></i>
+                <i class="fas fa-book fa-2x"></i>
                 <div>
-                    <h3>Ekologie</h3>
+                    <h3>Text HL</h3>
                     <p>Text</p>
                 </div>
-            </div>
-            <div class="item">
-                <i class="fas fa fa-book fa-2x"></i>
+                <i class="fas fa-book fa-2x"></i>
                 <div>
-                    <h3>Ekologie</h3>
+                    <h3>Text HL</h3>
                     <p>Text</p>
                 </div>
-            </div>
-            <div class="item">
-                <i class="fas fa fa-book fa-2x"></i>
+                <i class="fas fa-book fa-2x"></i>
                 <div>
-                    <h3>Ekologie</h3>
+                    <h3>Text HL</h3>
                     <p>Text</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section id="project">
+    <div class="project-img"></div>
+    <div class="project-text bg-dark py-2">
+        <h2 class="m-heading">Projektový <span class="text-primary">tým</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis eligendi eum eveniet exercitationem fuga illo incidunt laudantium minima natus nihil, nobis nulla officia optio perferendis, quae quasi reiciendis tempora.</p>
+        <h3>Náš tým</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="main-footer" class="bg-light text-center py-1">
+    <div class="container">
+        Copyright &copy; 2022 Tankové muzeum Praha, všechna práva vyhrazena
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</script>
+<script>
+    // Smooth scrolling
+    $('#navbar a, .btn').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100
+                }, 800
+            )
+        }
+    })
+
+
+    var nav_sections = $('section');
+    var main_nav = $('#navbar li, .mobile-nav');
+
+    $(window).on('scroll', function() {
+
+        var cur_pos = $(this).scrollTop() + 200;
+
+        // Menu Opacity on scrolling and hidding source
+
+        if (cur_pos > 350) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+            document.querySelector('#showcase .source').style.display = "none";
+        }
+        else {
+            document.querySelector('#navbar').style.opacity = 1;
+            document.querySelector('#showcase .source').style.display = "block";
+        }
+
+        // Navigation active state on scroll
+
+        nav_sections.each(function() {
+            var top = $(this).offset().top,
+                bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+                if (cur_pos <= bottom) {
+                    main_nav.find('a').removeClass('active');
+                }
+                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+
+            if (cur_pos < 300) {
+                $("#navbar ul li a").removeClass('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>

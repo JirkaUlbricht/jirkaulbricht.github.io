@@ -10,7 +10,7 @@ body {
     color: dodgerblue;
 }
 .container {
-    max-width: 110px;
+    max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
@@ -18,7 +18,7 @@ body {
 .text-center {
     text-align: center;
 }
-m-heading {
+.m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
@@ -27,8 +27,29 @@ m-heading {
 .py-2 {padding: 2.5rem 0;}
 .py-3 {padding: 3.5rem 0;}
 
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2.5rem;}
+.p-3 {padding: 3.5rem;}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #f4f4f4 dotted 1px;
+}
+
 p {
     margin: 0.75rem 0;
+}
+.bg-light {
+    background-color: #333333;
+    color: white;
+}
+.bg-dark {
+    background-color: black;
+    color: white;
 }
 .l-heading {
     font-size: 4rem;
@@ -127,10 +148,21 @@ a {
 #about .items .item {
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 #about .items .item i {
     background-color: #93cb52;
     padding: 1rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
     border-radius: 50%;
+}
+
+#project {
+    display: flex;
+}
+#project  div {
+    flex: 1;
+}
+#project .project-img {
+    background: url("https://source.unsplash.com/random/?team") no-repeat center center/cover;
 }
