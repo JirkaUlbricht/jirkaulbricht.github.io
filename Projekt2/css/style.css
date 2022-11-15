@@ -21,6 +21,13 @@ body {
 .text-bold {
     font-weight: bold;
 }
+.text-ul {
+    text-decoration-line: underline;
+}
+.text-bold-ul {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
 .m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
@@ -102,7 +109,8 @@ p {
     background-color: dodgerblue;
 }
 .btn-dark {
-
+    background-color: black;
+    color: white;
 }
 a {
     text-decoration: none;
