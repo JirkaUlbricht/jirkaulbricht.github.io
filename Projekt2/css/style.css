@@ -18,6 +18,9 @@ body {
 .text-center {
     text-align: center;
 }
+.text-bold {
+    font-weight: bold;
+}
 .m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
@@ -83,6 +86,14 @@ p {
     display: inline-block;
     color: #fff;
     background: #7ab;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.active {
+    display: inline-block;
+    color: #fff;
+    background: dodgerblue;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
