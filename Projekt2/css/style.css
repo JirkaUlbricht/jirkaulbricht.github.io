@@ -101,7 +101,7 @@ p {
     display: inline-block;
     color: #fff;
     background: dodgerblue;
-    padding: 0.5rem 2rem;
+    padding: 0 2rem;
     border: none;
     border-radius: 5px;
 }
@@ -187,4 +187,25 @@ a {
 }
 #project .project-img {
     background: url("https://source.unsplash.com/random/?team") no-repeat center center/cover;
+}
+
+#contact {
+    display: flex;
+}
+#contact div {
+    flex: 1;
+}
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+#contact .contact-form label {
+    display: block;
+}
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+#contact h3 {
+    margin-top: 3rem;
 }

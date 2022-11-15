@@ -23,6 +23,7 @@
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O nás</a></li>
         <li><a href="#project">Projekt</a></li>
+        <li><a href="#images">Galerie</a></li>
         <li><a href="#contact">Kontakt</a></li>
     </ul>
 </nav>
@@ -36,7 +37,7 @@
 </section>
 <section id="about" class="bg-light py-1">
     <div class="container">
-        <h2 class="m-heading text-center"><span class="text-primary">O nás</span></h2>
+        <h2 class="m-heading text-center"><span class="text-primary text-bold-ul">O nás</span></h2>
         <div class="items">
             <div class="item">
                 <i class="fa-solid fa-person fa-3x"></i>
@@ -79,12 +80,60 @@
         </ul>
     </div>
 </section>
+<section id="images" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">Ilustrační obrázky</h2>
+        </div>
+        <div class="items p-1">
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?military" alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?gun" alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?museum" alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?war" alt="Ilustrační obrázek">
+            </div>
+        </div>
+</section>
+<section id="contact">
+    <div class="contact-form bg-primary p-2x">
+        <h2 class="m-heading">Napište nám</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Jméno:</label>
+                <input type="text" name="name" id="name" placeholder="Vaše jméno a příjmění">
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" id="email" placeholder="Váš e-mail">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="text" name="phone" id="phone" placeholder="Váš telefon">
+            </div>
+            <div class="form-group">
+                <label for="message">Zpráva:</label>
+                <textarea name="message" id="message" placeholder="Vaše zpráva">
+
+                </textarea>
+            </div>
+        </form>
+    </div>
+    <div class="contact-form bg-dark p-2x">
+
+    </div>
+</section>
 
 <footer id="main-footer" class="bg-light text-center py-1">
     <div class="container text-bold">
         Copyright &copy; 2022 Tankové muzeum Praha, všechna práva vyhrazena
     </div>
 </footer>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -100,7 +149,7 @@
             $('html, body').animate(
                 {
                     scrollTop: $(hash).offset().top - 100
-                }, 700
+                }, 1000
             )
         }
     })
