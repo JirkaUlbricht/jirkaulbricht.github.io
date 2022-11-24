@@ -216,9 +216,9 @@ a {
     margin-bottom: 1rem;
 }
 #contact .contact-form .send-but {
-    max-width: 20%;
-    min-width: 15%;
-    padding: 0.5rem 0.5rem;
+    width: 25%;
+    padding: 0.5rem;
+    margin: 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
