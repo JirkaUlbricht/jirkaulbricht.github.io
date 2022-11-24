@@ -47,7 +47,7 @@ body {
 }
 .list li {
     padding: 0.5rem 0;
-    border-bottom: #f4f4f4 dotted 1px;
+    border-bottom: #f4f4f4 solid 1px;
 }
 
 p {
@@ -216,8 +216,9 @@ a {
     margin-bottom: 1rem;
 }
 #contact .contact-form .send-but {
-    max-width: 15%;
-    padding: 0.5rem 0;
+    max-width: 20%;
+    min-width: 15%;
+    padding: 0.5rem 0.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
