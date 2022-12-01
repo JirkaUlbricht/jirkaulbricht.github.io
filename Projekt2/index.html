@@ -162,6 +162,41 @@
         referrerpolicy="no-referrer">
 </script>
 <script>
+    //Nefunguje
+    $('#navbar #hambac').click(function (){
+        $('#navbar ul').slideToggle("slow")
+    });
+
+    window.addEventListener("resize", resizeListener);
+
+    let windowWidth = window.innerWidth;
+
+    function resizeListener() {
+        windowWidth = window.innerWidth;
+    }
+
+    if (windowWidth < 501 ) {
+        $('#navbar ul').click(function () {
+            $('#navbar ul').hide()
+        });
+    }
+    else {
+        $('navbar ul').show;
+    }
+
+    $("#navbar a, .btn").on("click", function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            const hash = this.hash;
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top - 260,
+                },
+                800
+            )
+        }
+    },
+
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
@@ -173,7 +208,7 @@
                 }, 1000
             )
         }
-    })
+    }))
 
 
     var nav_sections = $('section');

@@ -131,6 +131,9 @@ a {
     position: -webkit-sticky;
     top: 0;
 }
+#navbar #hambac {
+    display: none;
+}
 #navbar a {
     color: #ffffff;
 }

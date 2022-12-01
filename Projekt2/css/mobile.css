@@ -55,3 +55,27 @@
         padding: 0 1rem;
     }
 }
+
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    #navbar #hammac {
+        display: block;
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        display:none;
+    }
+    #navbar ul li {
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px solid;
+    }
+    #navbar ul li:first-child {
+        margin-top: 0.8rem;
+        border: #f4f4f4 1px solid;
+    }
+}
