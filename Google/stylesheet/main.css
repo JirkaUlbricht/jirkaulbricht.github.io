@@ -28,6 +28,10 @@ body {
     background-color: #777;
     font-weight: bolder;
 }
+.search-btn:hover {
+    background-color: #777;
+    font-weight: bolder;
+}
 .btn-dark {
     background-color: black;
     color: white;
@@ -128,6 +132,12 @@ p {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    alignment: center;
+}
+#search .search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #search .logo {
     display: flex;
@@ -136,6 +146,47 @@ p {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
-#search .search-form {
+#search .search-box {
+    background-color: transparent;
+    border: 0.5px solid #5f6368;
+    box-shadow: none;
+    border-radius: 36px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f4f4f4;
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    width: 500px;
+    min-width: 8rem;
+}
+#search .search-form .search-btn {
+    border: 1px solid #5f6368;
+    align-items: center;
+    alignment: center;
+    justify-content: center;
+    border-radius: 36px;
+    color: white;
+    margin: 12px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background: #777;
+    font-weight: bold;
+}
+#search input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+#main-footer {
+    display: flex;
+    justify-content: flex-end;
 }
