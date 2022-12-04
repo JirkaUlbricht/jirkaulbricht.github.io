@@ -68,6 +68,12 @@ p {
     padding: 0 2rem;
     overflow: hidden;
 }
+.container-1 {
+    max-width: 925px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
 .text-center {
     text-align: center;
 }
@@ -133,6 +139,12 @@ p {
     flex-direction: row;
     justify-content: center;
 }
+#search .search-form-left {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: left;
+}
 #search .logo {
     display: flex;
     align-items: center;
@@ -157,6 +169,20 @@ p {
     -webkit-tap-highlight-color: transparent;
     width: 500px;
     min-width: 8rem;
+}
+#search .desc {
+    flex: auto;
+    background-color: transparent;
+    box-shadow: none;
+    height: 44px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f4f4f4;
+    word-wrap: break-word;
+    outline: none;
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: left;
 }
 #search .search-btn {
     display: flex;
