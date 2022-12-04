@@ -32,9 +32,13 @@
         <h1>Obrázky Google</h1>
     </div>
     <div class="search-form">
-        <form action="https://www.google.com/search">
-            <input class="search-box" type="text" name="q" autocomplete="off" autocapitalize="off">
-            <input class="search-btn" type="submit" value="Hledat Obrázky">
+        <form method="get" action="http://images.google.com/images">
+            <div>
+                <input class="search-box" type="text" name="q" autocomplete="off" autocapitalize="off">
+            </div>
+            <div class="buttons">
+                <button class="search-btn" type="submit" value="Hledat Obrázky">Hledat Obrázky</button>
+            </div>
         </form>
     </div>
 </section>
