@@ -28,32 +28,34 @@
     </ul>
 </nav>
 <section id="search">
-    <div class="logo">
-        <h5>Pokročilé hledání Google</h5>
-    </div>
-    <div class="search-form-left container-1">
+    <form action="https://google.com/search" name="f">
+        <div class="logo">
+            <h5>Pokročilé hledání Google</h5>
+        </div>
+        <div class="search-form-left container-1">
         <label class="desc" for="field1">Všechna tato slova: </label>
-        <input type="text" class="search-box" id="field1" value=""  name="as_q">
-    </div>
-    <br>
-    <div class="search-form-left container-1">
-        <label class="desc" for="field2">Přesně toto slovo nebo sousloví: </label>
-        <input type="text" class="search-box" id="field2" value=""  name="as_epq">
-    </div>
-    <br>
-    <div class="search-form-left container-1">
-        <label class="desc" for="field3">Kterékoliv z těchto slov: </label>
-        <input type="text" class="search-box" id="field3" value=""  name="as_oq">
-    </div>
-    <br>
-    <div class="search-form-left container-1">
-        <label class="desc" for="field4">Žádné z těchto slov: </label>
-        <input type="text" class="search-box" id="field4" value=""  name="as_eq">
-    </div>
-    <br>
-    <div class="buttons">
-        <input type="submit" class="search-btn" value="Pokročilé vyhledávání">
-    </div>
+            <input type="text" class="search-box" id="field1" value=""  name="as_q" autocomplete="off" autocapitalize="off" maxlength="2048">
+        </div>
+        <br>
+        <div class="search-form-left container-1">
+            <label class="desc" for="field2">Přesně toto slovo nebo sousloví: </label>
+            <input type="text" class="search-box" id="field2" value=""  name="as_epq" autocomplete="off" autocapitalize="off" maxlength="2048">
+        </div>
+        <br>
+        <div class="search-form-left container-1">
+            <label class="desc" for="field3">Kterékoliv z těchto slov: </label>
+            <input type="text" class="search-box" id="field3" value=""  name="as_oq" autocomplete="off" autocapitalize="off" maxlength="2048">
+        </div>
+        <br>
+        <div class="search-form-left container-1">
+           <label class="desc" for="field4">Žádné z těchto slov: </label>
+         <input type="text" class="search-box" id="field4" value=""  name="as_eq" autocomplete="off" autocapitalize="off" maxlength="2048">
+        </div>
+        <br>
+        <div class="buttons">
+            <input type="submit" class="search-btn" value="Pokročilé vyhledávání">
+        </div>
+    </form>
 </section>
 <footer id="main-footer">
     <div class="container text-bold">
