@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Vektory</title>
+  <script>
+    // Pouze, pokud je celá stránka (DOM) načtena, spustím funkci (běh programu)
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Vyplním si hodnoty, ať to nemusím pokaždé dělat
+      document.querySelector('#ax').value = -6;
+      document.querySelector('#ay').value = 2;
+      document.querySelector('#bx').value = 0;
+      document.querySelector('#by').value = 5;
+
+      // Jakmile provedu submit (odeslání) spustím funkci
+      document.querySelector('form').onsubmit = () => {
+
+        // Načtu hodnoty do proměnných, ať s nimi může počítač pracovat
+        let ax = document.querySelector('#ax').value;
+        let ay = document.querySelector('#ay').value;
+        let bx = document.querySelector('#bx').value;
+        let by = document.querySelector('#by').value;
+
+        // Výpočet
+        let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay))).toFixed(2);
+
+        // Výstup
+        document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
+
+
+        // Stop form from submitting
+        return false;
+      }
+
+
+
+
+
+
+    });
+
+
+
+  </script>
+</head>
+<body>
+
+<form>
+  A:
+  <input type="number"
+         name="ax"
+         id="ax"
+         placeholder="x">
+  <input type="number"
+         name="ay"
+         id="ay"
+         placeholder="y"><br>
+  B:
+  <input type="number"
+         name="bx"
+         id="bx"
+         placeholder="x">
+  <input type="number"
+         name="by"
+         id="by"
+         placeholder="y">
+  <input type="submit"
+         value="Vypočítat" id="submit">
+</form>
+
+<p><div id="delkau"></div></p>
+
+
+</body>
+</html>
