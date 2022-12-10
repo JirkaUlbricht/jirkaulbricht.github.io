@@ -5,6 +5,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <title>Vektory</title>
+  <link rel="stylesheet" href="vek-style.css">
   <script>
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +24,7 @@
 
         let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay))).toFixed(2);
 
-        document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
+        document.querySelector("#delkau").innerHTML = `Délka vektoru u: <span class="text-bold">${delkau}</span>`;
 
         return false;
       }
@@ -31,11 +32,12 @@
   </script>
 </head>
 <body>
-<form>
+<h1 class="text-field">Vektorová kalkulačka</h1>
+<form class="text-field text-bold">
   <div>
     A:
     <input type="number" name="ax" id="ax" placeholder="x">
-    <input type="number" name="ay" id="ay" placeholder="y"><br>
+    <input type="number" name="ay" id="ay" placeholder="y">
   </div>
   <div>
     B:
@@ -43,11 +45,11 @@
     <input type="number" name="by" id="by" placeholder="y">
   </div>
   <div>
-    <input type="submit" value="Vypočítat" id="submit">
+    <input class="btn text-bold" type="submit" value="Vypočítat" id="submit">
   </div>
 </form>
 
-<p><div id="delkau"></div></p>
+<div id="delkau" class="text-field"></div>
 
 </body>
 </html>
