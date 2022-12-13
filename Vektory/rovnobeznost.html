@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Rovnoběžnost Vektorů</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vek-style.css">
+    <script>
+        function porovnejVektory() {
+            var x1 = document.getElementById("x1").value;
+            var y1 = document.getElementById("y1").value;
+            var x2 = document.getElementById("x2").value;
+            var y2 = document.getElementById("y2").value;
+
+            if (x1/x2 === y1/y2) {
+                document.getElementById("vysledek").innerHTML = "Vektory jsou rovnoběžné.";
+            } else {
+                document.getElementById("vysledek").innerHTML = "Vektory nejsou rovnoběžné.";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1 class="text-field">Vektorová kalkulačka rovnoběžnosti</h1>
+<form class="text-field text-bold">
+    <div class="marg-b">
+        <h3>Vektor 1:</h3><br>
+        X: <input type="number" id="x1" placeholder="x">
+        Y: <input type="number" id="y1" placeholder="y">
+    </div>
+    <div class="marg-b">
+        <h3>Vektor 2:</h3><br>
+        X: <input type="number" id="x2" placeholder="x">
+        Y: <input type="number" id="y2" placeholder="y">
+    </div>
+    <div class="marg-b">
+        <input class="btn text-bold" type="button" onclick="porovnejVektory()" value="Porovnej vektory">
+    </div>
+</form>
+<div id="vysledek" class="font-big text-field"></div>
+
+</body>
+</html>

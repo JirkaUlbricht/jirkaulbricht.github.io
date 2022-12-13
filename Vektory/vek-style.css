@@ -92,3 +92,12 @@ p {
     align-items: center;
     margin-top: 5rem;
 }
+.marg-b {
+    margin-bottom: 2rem;
+}
+.marg-b-small {
+    margin-bottom: 1rem;
+}
+.font-big {
+    font-size: 2rem;
+}
