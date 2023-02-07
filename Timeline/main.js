@@ -16,9 +16,11 @@ const run = () =>
         if (isInViewport(item)) {
             item.classList.add("show");
         }
+        else {
+            item.classList.remove("show");
+        }
     });
 
-// Events
 window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
