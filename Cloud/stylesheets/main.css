@@ -6,3 +6,52 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-ul {
+    text-decoration-line: underline;
+}
+.text-bold-ul {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2.5rem 0;}
+.py-3 {padding: 3.5rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2.5rem;}
+.p-3 {padding: 3.5rem;}
+
+p {
+    margin: 0.75rem 0;
+}
+.text-w {
+    color: white;
+}
+
+#navbar {
+    background: #2685de;
+    color: #ffffff;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+#navbar .logo-header {
+    font-weight: bold;
+    font-size: 24px;
+}

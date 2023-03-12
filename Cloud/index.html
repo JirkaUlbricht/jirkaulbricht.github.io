@@ -11,8 +11,8 @@
           referrerpolicy="no-referrer" />
 </head>
 <body>
-<header>
-    <p>The Cloud Project</p>
+<header id="navbar">
+    <p class="logo-header">The Cloud Project</p>
     <a href="login">Log in</a>
 </header>
 <section id="welcome">
@@ -20,7 +20,7 @@
     <a href="login">Get started</a><br>
     <a><i class="fas fa-arrow-down"></i></a>
 </section>
-<section>
+<section id="about" class="container">
     <h2>About</h2>
     <p>This project was started on the 10.3.2023 out of mainly
     boredom and a small challenge to test if I can even accomplish
@@ -37,6 +37,26 @@
     volume of files, so it's perfect for stuff like transferring
     files from different devices, storing your school assignments,
     having a backup of your files on hand and much more!</p>
+</section>
+<section id="contact" class="container">
+    <h2>Contact me:</h2>
+    <form>
+        <div class="FormLine">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="FormLine">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="FormLine">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send" />
+        </div>
+    </form>
 </section>
 
 <script src="./scripts/SmoothScroll.js"></script>

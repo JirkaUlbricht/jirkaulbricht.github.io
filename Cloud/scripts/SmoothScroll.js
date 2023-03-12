@@ -14,7 +14,7 @@ $('#navbar a, .btn').on('click', function (event) {
 var nav_sections = $('section');
 var main_nav = $('#navbar li, .mobile-nav');
 
-$(window).on('scroll', function () {
+let on = $(window).on('scroll', function () {
 
     var cur_pos = $(this).scrollTop() + 200;
 
@@ -26,4 +26,4 @@ $(window).on('scroll', function () {
     } else {
         document.querySelector('#navbar').style.opacity = 1;
         document.querySelector('#showcase .source').style.display = "block";
-    }}
+    }})
