@@ -4,13 +4,18 @@
     padding: 0;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-center {
     text-align: center;
@@ -36,14 +41,21 @@ body {
 p {
     margin: 0.75rem 0;
 }
+a {
+    text-decoration: none;
+}
 .text-w {
     color: white;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 #navbar {
     background: #2685de;
     color: #ffffff;
-    padding: 0.75rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,5 +65,51 @@ p {
 }
 #navbar .logo-header {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
+    padding-left: 0.5rem;
+}
+#navbar .login-btn {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    background: #7eb1e0;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #444444;
+    height: 36px;
+    border-radius: 36px;
+    cursor: pointer;
+}
+#navbar .login-btn:hover {
+    background: #00478a;
+}
+
+#welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #333333;
+    animation: fadeIn 2.5s;
+}
+#welcome .btn-big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    background: #7eb1e0;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #444444;
+    height: 36px;
+    border-radius: 36px;
+    width: 15rem;
+    min-width: 10rem;
+    cursor: pointer;
+    animation: fadeIn 3s;
+}
+#welcome .btn-big:hover {
+    background: #00478a;
 }
