@@ -177,3 +177,10 @@ html {
 #about .gap-sml {
     margin-bottom: 3rem;
 }
+#about .arrow {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    -webkit-text-stroke: 1px #333333;
+    text-decoration: none;
+}
