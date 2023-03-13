@@ -157,6 +157,9 @@ html {
     font-size: 50px;
     color: #333333;
     margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+#about .mar-top {
     margin-top: 6rem;
 }
 #about h3 {
@@ -179,8 +182,9 @@ html {
 }
 #about .arrow {
     position: absolute;
-    bottom: 20px;
     color: white;
+    align-content: center;
     -webkit-text-stroke: 1px #333333;
     text-decoration: none;
+    margin-bottom: 1rem;
 }
