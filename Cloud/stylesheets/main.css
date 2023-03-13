@@ -12,6 +12,12 @@ body {
     padding: 0 2rem;
     overflow: hidden;
 }
+.container-sml {
+    max-width: 850px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
 .center {
     display: flex;
     justify-content: center;
@@ -51,6 +57,9 @@ a {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+html {
+    scroll-behavior: smooth;
+}
 
 #navbar {
     background: #2685de;
@@ -65,17 +74,17 @@ a {
 }
 #navbar .logo-header {
     font-weight: bold;
-    font-size: 28px;
-    padding-left: 0.5rem;
+    font-size: 30px;
+    padding-left: 1rem;
 }
 #navbar .login-btn {
     display: flex;
     align-items: center;
     padding: 1rem 1.5rem;
     margin: 1rem;
-    background: #7eb1e0;
+    background: #038cfc;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     border: 1px solid #444444;
     height: 36px;
     border-radius: 36px;
@@ -87,11 +96,13 @@ a {
 
 #welcome h1 {
     display: flex;
+    margin-top: -15rem;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    color: #333333;
-    animation: fadeIn 2.5s;
+    font-size: 72px;
+    color: #eeeeee;
+    margin-bottom: 3rem;
+    animation: fadeIn 1.5s;
 }
 #welcome .btn-big {
     display: flex;
@@ -99,17 +110,70 @@ a {
     justify-content: center;
     padding: 1.5rem 2.5rem;
     margin: 1rem;
-    background: #7eb1e0;
+    background: #038cfc;
     color: white;
-    font-size: 20px;
-    border: 1px solid #444444;
+    font-size: 24px;
+    border: 2px solid #444444;
     height: 36px;
     border-radius: 36px;
     width: 15rem;
     min-width: 10rem;
     cursor: pointer;
-    animation: fadeIn 3s;
+    animation: fadeIn 1s linear both;
+    animation-delay: 0.75s;
 }
 #welcome .btn-big:hover {
     background: #00478a;
+}
+#welcome {
+    background: #333333 url("../img/MainBG.jpg") no-repeat;
+    position: center;
+    height: 100vh;
+}
+#welcome .welcome-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#welcome .arrow {
+    bottom: 20px;
+    position: absolute;
+    color: white;
+    -webkit-text-stroke: 1px #333333;
+    text-decoration: none;
+    animation: fadeIn 1s linear both;
+    animation-delay: 1.25s;
+}
+
+#about h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #333333;
+    margin-bottom: 1rem;
+    margin-top: 6rem;
+}
+#about h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+#about p {
+    font-size: 22px;
+}
+#about .gap {
+    margin-bottom: 7rem;
+}
+#about .gap-sml {
+    margin-bottom: 3rem;
 }
