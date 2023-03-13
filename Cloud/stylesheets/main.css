@@ -188,3 +188,14 @@ html {
     text-decoration: none;
     margin-bottom: 1rem;
 }
+#main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    bottom: 0;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #2685de;
+    color: white;
+}
