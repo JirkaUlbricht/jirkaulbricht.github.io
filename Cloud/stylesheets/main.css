@@ -180,6 +180,9 @@ html {
 #about .gap-sml {
     margin-bottom: 3rem;
 }
+#about .no-gap {
+    margin-bottom: 0;
+}
 #about .arrow {
     position: absolute;
     color: white;
