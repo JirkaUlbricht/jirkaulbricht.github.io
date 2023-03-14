@@ -90,6 +90,7 @@ html {
     height: 36px;
     border-radius: 36px;
     cursor: pointer;
+    transition: 0.5s;
 }
 #navbar .login-btn:hover {
     background: #00478a;
@@ -127,6 +128,7 @@ html {
     cursor: pointer;
     animation: fadeIn 1s linear both;
     animation-delay: 0.75s;
+    transition: 0.5s;
 }
 #welcome .btn-big:hover {
     background: #00478a;
@@ -252,6 +254,7 @@ html {
 #contact .contact-form textarea {
     min-height: 3rem;
     max-height: 12rem;
+    cursor: text;
 }
 #contact h3 {
     margin-top: 3rem;
@@ -276,6 +279,7 @@ html {
     height: 40px;
     border-radius: 40px;
     max-width: 15%;
+    transition: 0.5s;
     cursor: pointer;
 }
 #contact .btn-send:hover {
