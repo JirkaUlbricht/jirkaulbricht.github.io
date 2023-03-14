@@ -61,6 +61,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 #navbar {
     background: #2685de;
     color: #ffffff;
@@ -93,6 +94,11 @@ html {
 #navbar .login-btn:hover {
     background: #00478a;
 }
+#navbar a {
+    text-effect: none;
+    color: #ffffff;
+}
+
 
 #welcome h1 {
     display: flex;
@@ -100,7 +106,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 72px;
-    color: #eeeeee;
+    color: #ffffff;
     margin-bottom: 3rem;
     animation: fadeIn 1.5s;
 }
@@ -150,6 +156,7 @@ html {
     animation-delay: 1.25s;
 }
 
+
 #about h2 {
     display: flex;
     align-items: center;
@@ -191,6 +198,42 @@ html {
     text-decoration: none;
     margin-bottom: 1rem;
 }
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#contact h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #333333;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+#contact div {
+    flex: 1;
+}
+#contact .contact-form .FormLine {
+    margin: 0.75rem;
+}
+#contact .contact-form label {
+    display: block;
+}
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+#contact h3 {
+    margin-top: 3rem;
+}
+
+
 #main-footer {
     display: flex;
     justify-content: center;
