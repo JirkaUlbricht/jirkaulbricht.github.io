@@ -150,19 +150,15 @@ html {
     bottom: 20px;
     padding: 10px 22px;
     border-radius: 100%;
-    opacity: 100%;
     position: absolute;
     color: white;
-    border: 1px transparent solid;
     -webkit-text-stroke: 1px #333333;
     text-decoration: none;
     animation: fadeIn 1s linear both;
     animation-delay: 1.25s;
 }
 #welcome .arrow:hover {
-    border: 1px black solid;
-    background: #333333;
-    opacity: 50%;
+    background: rgba(101, 101, 101, 0.4);
 }
 
 
@@ -201,11 +197,17 @@ html {
 }
 #about .arrow {
     position: absolute;
+    padding: 10px 20px;
+    border-radius: 100%;
     color: white;
+    margin-top: 1rem;
     align-content: center;
     -webkit-text-stroke: 1px #333333;
     text-decoration: none;
     margin-bottom: 1rem;
+}
+#about .arrow:hover {
+    background: rgba(101, 101, 101, 0.4);
 }
 
 
