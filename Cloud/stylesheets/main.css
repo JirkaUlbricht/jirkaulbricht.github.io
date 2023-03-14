@@ -298,4 +298,8 @@ html {
     background: #2685de;
     color: white;
 }
+.donation-button {
+    transition: 0.5s;
+    display: none;
+}
 
