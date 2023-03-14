@@ -148,12 +148,21 @@ html {
 }
 #welcome .arrow {
     bottom: 20px;
+    padding: 10px 22px;
+    border-radius: 100%;
+    opacity: 100%;
     position: absolute;
     color: white;
+    border: 1px transparent solid;
     -webkit-text-stroke: 1px #333333;
     text-decoration: none;
     animation: fadeIn 1s linear both;
     animation-delay: 1.25s;
+}
+#welcome .arrow:hover {
+    border: 1px black solid;
+    background: #333333;
+    opacity: 50%;
 }
 
 
@@ -252,17 +261,17 @@ html {
 #contact .btn-send {
     display: flex;
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 1.5rem;
     margin: 1rem;
     background: #038cfc;
     color: white;
-    font-size: 24px;
-    border: 2px solid #444444;
-    height: 36px;
-    border-radius: 36px;
-    width: 15rem;
-    min-width: 10rem;
+    font-size: 18px;
+    border: 1px solid #444444;
+    height: 40px;
+    border-radius: 40px;
+    max-width: 15%;
     cursor: pointer;
 }
 #contact .btn-send:hover {
