@@ -205,6 +205,7 @@ html {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    font-size: 18px;
 }
 #contact h2 {
     display: flex;
@@ -217,20 +218,55 @@ html {
 }
 #contact div {
     flex: 1;
+    flex-direction: row;
+}
+#contact input {
+    display: block;
+}
+#contact label {
+    width: 10%;
+    min-width: 8%;
+    overflow: visible;
 }
 #contact .contact-form .FormLine {
-    margin: 0.75rem;
-}
-#contact .contact-form label {
-    display: block;
+    margin: 2rem;
 }
 #contact .contact-form input, #contact .contact-form textarea {
     width: 100%;
     padding: 0.4rem;
-    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+#contact .contact-form textarea {
+    min-height: 3rem;
+    max-height: 12rem;
 }
 #contact h3 {
     margin-top: 3rem;
+}
+#contact .arrange {
+    width: 75%;
+}
+#contact .msg {
+    position: sticky;
+}
+#contact .btn-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    background: #038cfc;
+    color: white;
+    font-size: 24px;
+    border: 2px solid #444444;
+    height: 36px;
+    border-radius: 36px;
+    width: 15rem;
+    min-width: 10rem;
+    cursor: pointer;
+}
+#contact .btn-send:hover {
+    background: #00478a;
 }
 
 
@@ -245,3 +281,4 @@ html {
     background: #2685de;
     color: white;
 }
+

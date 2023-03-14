@@ -192,20 +192,13 @@ a {
     background: url("https://source.unsplash.com/random/?team") no-repeat center center/cover;
 }
 
-#images .items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 2rem;
-}
 
 #contact {
     display: flex;
 }
 #contact div {
     flex: 1;
+    flex-direction: column;
 }
 #contact .contact-form .form-group {
     margin: 0.75rem;

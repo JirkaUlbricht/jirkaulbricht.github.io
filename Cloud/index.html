@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>The Cloud project</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <meta name="description" content="Official website of The Cloud Project"/>
-    <meta name="keywords" content="cloud, easy access, storage, cloud storage"/>
+    <meta name="title" content="The Cloud Project">
+    <meta name="description" content="Official website of The Cloud ProjectSmall scale storage done simple, easy and free!">
+    <meta name="keywords" content="cloud,easy access,storage,cloud storage,small storage">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
     <link href="./stylesheets/main.css" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -61,27 +65,32 @@
     <div>
         <h2>Contact me:</h2>
     </div>
-    <form>
-        <div class="FormLine center">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Name">
-        </div>
-        <div class="FormLine center">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Email">
-        </div>
-        <div class="FormLine center">
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Your message"></textarea>
-        </div>
-        <div class="FormLine center">
-            <input type="submit" value="Send" />
-        </div>
-    </form>
+    <div class="contact-form">
+        <form>
+            <div class="FormLine center">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="arrange" placeholder="Name" maxlength="40">
+            </div>
+            <div class="FormLine center">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail" maxlength="30">
+            </div>
+            <div class="FormLine center">
+                <label for="message" class="msg">Message:</label>
+                <textarea name="message" id="message" placeholder="Your message" style="resize: vertical" maxlength="1000"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="btn-send" value="Send" />
+            </div>
+        </form>
+    </div>
 </section>
 
 <footer id="main-footer" class="text-center">
-    <div class="container">
+    <div>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help ya boi out a bit', '#00478a', 'G2G1GUX04');kofiwidget2.draw();</script>
+    </div>
+    <div class="container center">
         Copyright &copy; 2023 The Cloud Project, all rights reserved
     </div>
 </footer>
