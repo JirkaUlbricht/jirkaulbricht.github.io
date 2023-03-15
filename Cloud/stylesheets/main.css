@@ -287,6 +287,78 @@ html {
 }
 
 
+#login {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+#login .login-form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10rem;
+    animation: fadeIn 1s linear both;
+    animation-delay: 1s;
+}
+#login h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #333333;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    animation: fadeIn 1.5s linear both;
+}
+#login div {
+    flex: 1;
+    flex-direction: row;
+}
+#login label {
+    margin-bottom: 1rem;
+}
+#login .login-form .box {
+    width: 100%;
+    padding: 0.4rem;
+    min-width: 25rem;
+    max-width: 30rem;
+}
+#login h1 {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+#login .login-form .log-in {
+    display: flex;
+    alignment: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    background: #038cfc;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #444444;
+    height: 40px;
+    max-width: 25%;
+    border-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#login .log-in:hover {
+    background: #00478a;
+}
+
+
+
 #main-footer {
     display: flex;
     justify-content: center;
@@ -298,8 +370,17 @@ html {
     background: #2685de;
     color: white;
 }
-.donation-button {
-    transition: 0.5s;
-    display: none;
+#main-footer-login {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    bottom: 0;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #2685de;
+    color: white;
 }
 

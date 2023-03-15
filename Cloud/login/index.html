@@ -50,29 +50,25 @@
 <body>
 <header id="navbar">
     <a href="/Cloud"><p class="logo-header"><i class="fa-solid fa-cloud"></i> The Cloud Project</p></a>
-    <a href="login" class="login-btn">Log in</a>
+    <a href="/Cloud" class="login-btn">Back</a>
 </header>
 
-<section>
-    <h1>Log in</h1>
-    <div>
-        <div style = "width:300px; border: solid 1px #333333; " >
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
-            <div style = "margin:30px">
-                <form action = "" method = "post">
-                    <label>Username: </label><input type = "text" name = "username" class = "box"/><br /><br />
-                    <label>Password: </label><input type = "password" name = "password" class = "box" /><br/><br />
-                    <input type = "submit" value = " Submit "/><br />
-                </form>
-                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-            </div>
-        </div>
+<section id="login">
+    <h1 class="container-sml">Log in</h1>
+    <div class="login-form">
+        <form action="" method="POST">
+            <label for="username">Username: </label>
+            <input id="username" type="text" name="username" class="box" placeholder="Username"/><br /><br />
+            <label for="password">Password: </label>
+            <input id="password" type="password" name="password" class="box" placeholder="Password"/><br/><br />
+            <input type="submit" value="Submit" class="log-in center"/><br />
+        </form>
+        <div><?php echo $error; ?></div>
     </div>
 </section>
-<a href="../profile">Log in</a>
-<a href="../">Back</a>
+<a href="../profile">To profile page</a>
 
-<footer id="main-footer" class="text-center">
+<footer id="main-footer-login" class="text-center">
     <div class="container center">
         Copyright &copy; 2023 The Cloud Project, all rights reserved
     </div>
