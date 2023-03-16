@@ -302,8 +302,8 @@ html {
     align-items: center;
     justify-items: center;
     padding-top: 10rem;
-    animation: fadeIn 1s linear both;
-    animation-delay: 1s;
+    animation: fadeIn 0.75s linear both;
+    animation-delay: 0.5s;
 }
 #login h1 {
     display: flex;
@@ -313,7 +313,7 @@ html {
     color: #333333;
     margin-bottom: 2rem;
     margin-top: 4rem;
-    animation: fadeIn 1.5s linear both;
+    animation: fadeIn 0.75s linear both;
 }
 #login div {
     flex: 1;
