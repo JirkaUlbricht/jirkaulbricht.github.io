@@ -29,9 +29,9 @@
     <div class="login-form">
         <form action="" method="POST">
             <label for="username">Username: </label>
-            <input id="username" type="text" name="username" class="box" placeholder="Username"/><br /><br />
+            <input id="username" type="text" name="username" class="box" placeholder="Username" required minlength="3" maxlength="32"/><br /><br />
             <label for="password">Password: </label>
-            <input id="password" type="password" name="password" class="box" placeholder="Password"/><br/><br />
+            <input id="password" type="password" name="password" class="box" placeholder="Password" required minlength="8" max="64"/><br/><br />
             <input type="submit" value="Submit" class="log-in center"/><br />
         </form>
         <div><?php echo $error; ?></div>
