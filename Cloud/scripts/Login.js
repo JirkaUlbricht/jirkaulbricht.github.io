@@ -4,7 +4,7 @@
     xhr.open("POST", "login.php");
     xhr.onload = function() {
     if (xhr.status === 200) {
-    window.location.href = "profile.html";
+    window.location.href = "../Cloud/profile/index.html";
 } else {
     alert("Login failed. Please try again.");
 }
