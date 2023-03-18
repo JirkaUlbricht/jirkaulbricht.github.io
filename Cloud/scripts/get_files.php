@@ -3,7 +3,6 @@
 session_start();
 
 if (!isset($_SESSION["username"])) {
-  alert("Wrong username or password. Try again")
   http_response_code(401);
   exit;
 }
