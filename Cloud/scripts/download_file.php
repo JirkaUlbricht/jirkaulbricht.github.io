@@ -9,7 +9,7 @@ if (!isset($_SESSION["username"])) {
 
 $username = $_SESSION["username"];
 $filename = $_GET["filename"];
-$filepath = "./files/$username/$filename";
+$filepath = "./users/$username/$filename";
 
 if (file_exists($filepath)) {
   header("Content-type: application/octet-stream");

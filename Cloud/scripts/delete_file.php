@@ -9,7 +9,7 @@ if (!isset($_SESSION["username"])) {
 
 $username = $_SESSION["username"];
 $filename = $_POST["filename"];
-$filepath = "./files/$username/$filename";
+$filepath = "./users/$username/$filename";
 
 if (file_exists($filepath)) {
   unlink($filepath);

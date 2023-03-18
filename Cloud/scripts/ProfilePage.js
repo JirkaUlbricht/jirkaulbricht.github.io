@@ -1,6 +1,6 @@
 function updateFileList() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "get_files.php");
+    xhr.open("GET", "../scripts/get_files.php");
     xhr.onload = function() {
         if (xhr.status === 200) {
             document.getElementById("file-list").innerHTML = xhr.responseText;
@@ -12,7 +12,7 @@ function updateFileList() {
 function deleteFile(filename) {
     if (confirm("Are you sure you want to delete this file?")) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "delete_file.php");
+        xhr.open("POST", "../scripts/delete_file.php");
         xhr.onload = function() {
             if (xhr.status === 200) {
                 updateFileList();
@@ -33,7 +33,7 @@ document.getElementById("upload-button").addEventListener("click", function() {
     input.multiple = true;
     input.onchange = function() {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "upload_file.php");
+        xhr.open("POST", "../scripts/upload_file.php");
         xhr.onload = function() {
             if (xhr.status === 200) {
                 updateFileList();

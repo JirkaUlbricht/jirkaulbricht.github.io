@@ -8,7 +8,7 @@ if (!isset($_SESSION["username"])) {
 }
 
 $username = $_SESSION["username"];
-$dirpath = "./files/$username/";
+$dirpath = "./users/$username/";
 
 if (!is_dir($dirpath)) {
   mkdir($dirpath);
