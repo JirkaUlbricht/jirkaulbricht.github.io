@@ -20,21 +20,20 @@
 </head>
 <body>
 <header id="navbar">
-    <a href="/Cloud"><p class="logo-header"><i class="fa-solid fa-cloud"></i> The Cloud Project</p></a>
-    <a href="/Cloud" class="login-btn">Back</a>
+    <a href="/"><p class="logo-header"><i class="fa-solid fa-cloud"></i> The Cloud Project</p></a>
+    <a href="/" class="login-btn">Back</a>
 </header>
 
 <section id="login">
     <h1 class="container-sml">Log in</h1>
     <div class="login-form">
-        <form action="../scripts/login.php" method="post">
+        <form action="authenticate.php" method="post" id="login-form">
             <label for="username">Username: </label>
             <input id="username" type="text" name="username" class="box" placeholder="Username" required minlength="3" maxlength="32"/><br /><br />
             <label for="password">Password: </label>
             <input id="password" type="password" name="password" class="box" placeholder="Password" required minlength="8" max="64"/><br/><br />
             <input type="submit" value="Submit" class="log-in center"/><br />
         </form>
-        <div><?php echo $error; ?></div>
     </div>
 </section>
 <a href="../profile">To profile page</a>
@@ -45,6 +44,5 @@
     </div>
 </footer>
 
-<script src="../scripts/Login.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
 <body>
 <header id="navbar">
     <a href="#welcome"><p class="logo-header"><i class="fa-solid fa-cloud"></i> The Cloud Project</p></a>
-    <a href="login" class="login-btn">Log in</a>
+    <a href="https://jirkuvweb.jecool.net/login" class="login-btn">Log in</a>
 </header>
 <section id="welcome" class="welcome-content">
     <div class="welcome-content">
@@ -37,22 +37,22 @@
         <br><br>
         <h2>About</h2>
         <p>This project was started on the 10.3.2023 out of mainly
-        boredom and a small challenge to test if I can even accomplish
-        something like this. It isn't anything cool or comparable
-        with any other cloud services regarding matters like
-        security or file storage. It's main purpose is to be
-        convenient to the user and be easily usable. I hope you
-        will enjoy the using Cloud project as I have enjoyed
-        making it all work nice and smooth.</p>
+            boredom and a small challenge to test if I can even accomplish
+            something like this. It isn't anything cool or comparable
+            with any other cloud services regarding matters like
+            security or file storage. It's main purpose is to be
+            convenient to the user and be easily usable. I hope you
+            will enjoy the using Cloud project as I have enjoyed
+            making it all work nice and smooth.</p>
     </div>
     <div class="gap-sml">
         <h2>What do I offer?</h2>
         <p>As stated, the main thing I offer is convenience and
-        easy access to their files whenever and wherever you need.
-        The Cloud project is designed for only holding a smaller
-        volume of files, so it's perfect for stuff like transferring
-        files from different devices, storing your school assignments,
-        having a backup of your files on hand and much more!</p>
+            easy access to their files whenever and wherever you need.
+            The Cloud project is designed for only holding a smaller
+            volume of files, so it's perfect for stuff like transferring
+            files from different devices, storing your school assignments,
+            having a backup of your files on hand and much more!</p>
     </div>
     <h3>Have any questions or suggestions?</h3>
     <h3 class="gap-sml">Send them down below!</h3>
@@ -65,7 +65,7 @@
         <h2>Contact me:</h2>
     </div>
     <div class="contact-form">
-        <form>
+        <form action="" method="post">
             <div class="FormLine center">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" class="arrange" placeholder="Name" maxlength="40" minlength="2" required>
@@ -75,8 +75,12 @@
                 <input type="text" name="email" id="email" placeholder="E-mail" maxlength="30" minlength="2" required>
             </div>
             <div class="FormLine center">
-                <label for="message" class="msg">Message:</label>
-                <textarea name="message" id="message" placeholder="Your message" style="resize: vertical" maxlength="1000" minlength="2" required></textarea>
+                <label for="email">Subject:</label>
+                <input type="text" name="email" id="email" placeholder="Subject" maxlength="75" minlength="2" required>
+            </div>
+            <div class="FormLine center">
+                <label for="msg" class="msg">Message:</label>
+                <textarea name="msg" id="message" placeholder="Your message" style="resize: vertical" maxlength="1000" minlength="2" required></textarea>
             </div>
             <div class="FormLine center">
                 <input type="submit" class="btn-send" value="Send" />
@@ -84,6 +88,7 @@
         </form>
     </div>
 </section>
+
 
 <footer id="main-footer" class="text-center">
     <div class="container center">
@@ -102,6 +107,5 @@
     });
 </script>
 
-<script src="./scripts/SmoothScroll.js"></script>
 </body>
 </html>
