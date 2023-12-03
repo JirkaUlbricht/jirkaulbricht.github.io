@@ -57,6 +57,9 @@ a {
 .text-w {
     color: white;
 }
+.gap-1 {margin-bottom: 1rem}
+.gap-2 {margin-bottom: 2rem}
+.gap-3 {margin-bottom: 3rem}
 
 
 #navbar {
@@ -146,4 +149,22 @@ a {
     font-size: 56px;
     margin-top: 15%;
     margin-bottom: 1rem;
+}
+#main .rez {
+    background: #cc0000;
+    width: fit-content;
+    color: #3b3b3b;
+    font-size: 22px;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+#main .rez:hover {
+    background: #990000;
+    color: white;
+    transition: 0.5s;
+}
+#main video {
+    min-width: 80%;
+    max-width: 100%;
 }
