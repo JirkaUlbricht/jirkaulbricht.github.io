@@ -3,11 +3,18 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: CustomFont;
+    src: url("../Afacad-VariableFont_wght.ttf");
+}
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    background: #90e670;
+    color: #333333;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1250px;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
@@ -62,8 +69,9 @@ a {
 .gap-3 {margin-bottom: 3rem}
 
 
+
 #navbar {
-    background: #53a137;
+    background: #31701a;
     color: #ffffff;
     padding: 0.5rem;
     display: flex;
@@ -73,7 +81,7 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    max-height: 86px;
+    max-height: 110px;
     z-index: 2;
 }
 #navbar .group {
@@ -92,6 +100,7 @@ a {
     height: 100px;
     width: 200px;
     align-items: center;
+    justify-content: center;
     margin: 0.5rem 0 2rem 0;
 }
 #navbar .logo-header:hover {
