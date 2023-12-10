@@ -201,6 +201,8 @@ a {
     text-align: justify;
 }
 
+
+
 #kontakt h1 {
     font-size: 40px;
     display: flex;
@@ -212,6 +214,7 @@ a {
     font-size: 30px;
     display: flex;
     justify-content: center;
+
 }
 #kontakt p {
     font-size: 22px;
@@ -227,4 +230,14 @@ a {
 #kontakt img {
     width: 400px;
     height: 250px;
+}
+#kontakt .kontakt {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#kontakt .kontakt i {
+    margin-right: 0.5rem;
 }

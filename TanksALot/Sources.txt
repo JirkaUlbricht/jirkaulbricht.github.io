@@ -1,0 +1,3 @@
+Zdroje
+
+Ikony - Knihovna FontAwesome verze 4.7.0. https://fontawesome.com/
