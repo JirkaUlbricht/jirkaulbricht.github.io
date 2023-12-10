@@ -9,7 +9,6 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
     background: #90e670;
     color: #333333;
 }
@@ -81,7 +80,7 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    max-height: 110px;
+    max-height: 100px;
     z-index: 2;
 }
 #navbar .group {
@@ -187,8 +186,8 @@ a {
     font-size: 46px;
     display: flex;
     justify-content: center;
-    padding-top: 2.5%;
-    padding-bottom: 1.5rem;
+    margin-top: 2.5%;
+    margin-bottom: 1.5rem;
 }
 #about h2 {
     font-size: 30px;
@@ -200,4 +199,32 @@ a {
     font-size: 22px;
     display: flex;
     text-align: justify;
+}
+
+#kontakt h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+#kontakt h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+#kontakt p {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+#kontakt .mapa {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    alignment: center;
+}
+#kontakt img {
+    width: 400px;
+    height: 250px;
 }
