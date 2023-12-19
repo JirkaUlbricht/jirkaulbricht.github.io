@@ -158,6 +158,37 @@ Navbar
     text-effect: none;
     color: #ffffff;
 }
+#navbar .narrow-menu {
+    display: none;
+}
+#navbar .wide-menu, #navbar .wide-menu a {
+    display: flex;
+}
+@media (pointer: coarse)  {
+    #navbar {
+        background: #31701a;
+        color: #ffffff;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        max-height: 100%;
+        z-index: 2;
+    }
+
+    #navbar .narrow-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar .wide-menu, #navbar .wide-menu a {
+        display: none;
+    }
+}
 
 /*
 Hlavní stránka
@@ -173,6 +204,15 @@ Hlavní stránka
     margin-bottom: 1rem;
 }
 #main .rez {
+    background: #cc0000;
+    width: fit-content;
+    color: white;
+    font-size: 22px;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+#main .rez2 {
     background: #cc0000;
     width: fit-content;
     color: white;

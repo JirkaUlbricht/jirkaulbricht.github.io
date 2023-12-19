@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Tanks A Lot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stajl.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -16,16 +15,26 @@
 <body>
 
 <header id="navbar">
-  <div class="group">
-      <a href="index.html"><img class="logo" src="img/Web%20Logo.png" alt="Logo firmy"></a>
-  </div>
-  <div class="group">
-      <a href="index.html"><h3 class="btn-current">Hlavní stránka</h3></a>
-      <a href="about.html"><h3 class="btn">O nás</h3></a>
-      <a href="inventory.html"><h3 class="btn">Naše sbírka</h3></a>
-      <a href="kontakt.html"><h3 class="btn">Kontakt</h3></a>
-      <a href="rezervace.html"><h3 class="rez">Rezervace</h3></a>
-  </div>
+    <div class="group">
+        <a href="index.html"><img class="logo" src="img/Web%20Logo.png" alt="Logo firmy"></a>
+    </div>
+    <div class="group narrow-menu">
+        <i class="fa-solid fa-bars fa-xl"></i>
+        <ul>
+            <li><a href="index.html"><h3 class="btn-current">Hlavní stránka</h3></a></li>
+            <li><a href="about.html"><h3 class="btn">O nás</h3></a></li>
+            <li><a href="inventory.html"><h3 class="btn">Naše sbírka</h3></a></li>
+            <li><a href="kontakt.html"><h3 class="btn">Kontakt</h3></a></li>
+            <li><a href="rezervace.html"><h3 class="rez">Rezervace</h3></a></li>
+        </ul>
+    </div>
+    <div class="group wide-menu">
+        <a href="index.html"><h3 class="btn-current">Hlavní stránka</h3></a>
+        <a href="about.html"><h3 class="btn">O nás</h3></a>
+        <a href="inventory.html"><h3 class="btn">Naše sbírka</h3></a>
+        <a href="kontakt.html"><h3 class="btn">Kontakt</h3></a>
+        <a href="rezervace.html"><h3 class="rez">Rezervace</h3></a>
+    </div>
 </header>
 
 <section id="main" class="container">
@@ -45,7 +54,7 @@
 <section id="video" class="container">
     <div class="center">
         <video width="800" height="400" preload="auto" controls>
-            <source src="./img/CatBeatbox.mp4" type="video/mp4">
+            <source src="img/MainVideo.mp4" type="video/mp4">
         </video>
     </div>
 </section>
