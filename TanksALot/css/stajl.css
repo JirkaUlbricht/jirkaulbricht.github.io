@@ -158,7 +158,7 @@ Navbar
     text-effect: none;
     color: #ffffff;
 }
-#navbar .narrow-menu {
+#navbar .narrow-menu, .menu {
     display: none;
 }
 #navbar .wide-menu, #navbar .wide-menu a {
@@ -172,7 +172,7 @@ Navbar
         padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: sticky;
         position: -webkit-sticky;
@@ -180,9 +180,28 @@ Navbar
         max-height: 100%;
         z-index: 2;
     }
-
-    #navbar .narrow-menu {
+    #navbar label {
         display: flex;
+        padding: 1rem 0;
+        background: none;
+    }
+    #navbar .menu-btn{
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    #navbar .menu-btn + input{
+        display: none;
+    }
+    .collapse + input + div{
+        display:none;
+    }
+    #navbar .menu-btn + input:checked + div{
+        display:block;
+    }
+    #navbar .narrow-menu {
+        display: none;
         flex-direction: column;
     }
     #navbar .wide-menu, #navbar .wide-menu a {
