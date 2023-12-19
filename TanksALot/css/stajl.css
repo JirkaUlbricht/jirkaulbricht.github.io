@@ -158,7 +158,7 @@ Navbar
     text-effect: none;
     color: #ffffff;
 }
-#navbar .narrow-menu, .menu {
+#navbar .narrow-menu, .menu, #navbar .menu-btn, #navbar input {
     display: none;
 }
 #navbar .wide-menu, #navbar .wide-menu a {
@@ -174,11 +174,10 @@ Navbar
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        position: sticky;
-        position: -webkit-sticky;
+        position: absolute;
+        width: 100vw;
         top: 0;
         max-height: 100%;
-        z-index: 2;
     }
     #navbar label {
         display: flex;
@@ -213,6 +212,9 @@ Navbar
 Hlavní stránka
  */
 
+#main {
+    margin-top: 10vh;
+}
 #main, #video {
     height: 100vh;
 }
