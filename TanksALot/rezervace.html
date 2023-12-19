@@ -26,5 +26,42 @@
     </div>
 </header>
 
+<section id="rezervace">
+    <form action="" method="post">
+        <div class="center">
+            <label for="name">Jméno:</label>
+            <input type="text" name="name" id="name" placeholder="Jméno" maxlength="40" minlength="2" required>
+        </div>
+        <div class="center">
+            <label for="surname">Příjmení:</label>
+            <input type="text" name="surname" id="surname" placeholder="Jméno" maxlength="40" minlength="2" required>
+        </div>
+        <div class="center">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="E-mail" maxlength="40" minlength="2" required>
+        </div>
+        <div class="center">
+            <label for="phone" autocomplete="off">Tel. číslo:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Tel. číslo" maxlength="9" minlength="8">
+        </div>
+        <div class="center">
+            <label for="tank" autocomplete="off">Vyberte si vozidlo:</label>
+            <select name="tank" id="tank">
+                <option value="T-34">T-34</option>
+                <option value="Leopard A1A1">Leopard A1A1</option>
+                <option value="M-48">M-48</option>
+                <option value="Crusader">Crusader</option>
+            </select>
+        </div>
+        <div class="center">
+            <label for="messageInput" class="msg" autocomplete="off">Message:</label>
+            <textarea name="msg" id="messageInput" placeholder="Your message (Max 1000 char.)" style="resize: vertical" maxlength="1000" minlength="2" required></textarea>
+        </div>
+        <div class="center">
+            <input type="submit" class="btn-send" value="Send" />
+        </div>
+    </form>
+</section>
+
 </body>
 </html>
