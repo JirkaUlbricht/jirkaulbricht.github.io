@@ -1,3 +1,6 @@
 Zdroje
 
 Ikony - Knihovna FontAwesome verze 4.7.0. https://fontawesome.com/
+Logo + video - Jiří Ulbricht
+Obrázky IMG_1.jpg až IMG_9.jpg - Jiří Ulbricht
+Obrázek MapaMuzea.png - Mapy Google
