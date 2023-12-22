@@ -14,7 +14,6 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: #90e670;
     color: #333333;
 }
 .container {
@@ -139,7 +138,7 @@ Navbar
 }
 #navbar .rez-current {
     background: #990000;
-    color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     font-size: 22px;
@@ -194,6 +193,7 @@ Navbar
         width: 100vw;
         top: 0;
         max-height: 100%;
+        transition: 0.5s;
     }
     #navbar label {
         display: flex;
@@ -323,6 +323,8 @@ Kontakt
     font-size: 30px;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
 #kontakt p {
@@ -355,3 +357,115 @@ Kontakt
 Rezervace
  */
 
+#rezervace h3 {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+}
+#rezervace li {
+    display: flex;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+}
+#rezervace li label {
+    font-size: 20px;
+    font-weight: bold;
+}
+#rezervace .red {
+    color: #ff0000;
+}
+#rezervace li div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+#rezervace input {
+    background-color: #f8f8f8;
+    border: 0.5px solid #5f6368;
+    border-radius: 12px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #000000;
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    width: 500px;
+    min-width: 8rem;
+}
+#rezervace select {
+    background-color: #f8f8f8;
+    border: 0.5px solid #5f6368;
+    border-radius: 12px;
+    height: 32px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    width: 420px;
+    max-width: available;
+    min-width: 8rem;
+}
+#rezervace li div .pozn{
+    width:648px;
+    height:140px;
+    background-color: #f8f8f8;
+    border: 0.5px solid #5f6368;
+    box-shadow: none;
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #000000;
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    min-width: 8rem;
+}
+#rezervace button {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 0.5rem;
+    background: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+}
+#rezervace button:hover {
+    background: #aa0000;
+}
+
+/*
+Galerie
+*/
+
+.fotky {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: 5vh auto;
+    padding: 16px;
+}
+
+.fotky img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fotky img:hover {
+    transform: scale(1.05);
+}
+
+@media (pointer: coarse) {
+    .fotky {
+        grid-template-columns: 1fr;
+    }
+}
