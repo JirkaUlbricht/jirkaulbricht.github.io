@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+?>
+
+
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +43,7 @@
 </header>
 
 <section id="rezervace">
-    <form name="rezervace" method="post" accept-charset="utf-8" autocomplete="on">
+    <form name="rezervace" method="post" accept-charset="utf-8" autocomplete="off">
         <div class="rez-form">
             <ul>
                 <li>
