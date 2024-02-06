@@ -4,3 +4,5 @@ Ikony - Knihovna FontAwesome verze 4.7.0. https://fontawesome.com/
 Logo + video - Jiří Ulbricht
 Obrázky IMG_1.jpg až IMG_9.jpg - Jiří Ulbricht
 Obrázek MapaMuzea.png - Mapy Google
+
+CREATE TABLE `tanksalot`.`jizdy` ( `id` INT(7) NOT NULL AUTO_INCREMENT , `jmeno` VARCHAR(32) NOT NULL COMMENT 'Jméno' , `prijmeni` VARCHAR(32) NOT NULL COMMENT 'Příjmení' , `telefon` TINYINT(9) NOT NULL COMMENT 'Bez mez. předčíslí' , `email` VARCHAR(32) NOT NULL COMMENT 'Email' , `vozidlo` VARCHAR(12) NOT NULL COMMENT 'Vybrané vozidlo' , `osobyPoc` TINYINT(1) NOT NULL COMMENT 'Počet osob' , `jizda` VARCHAR(64) NOT NULL COMMENT 'Vybraný typ jízdy' , `pozn` TEXT NOT NULL COMMENT 'Nepovinná' , `datRez` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Datum rezervace jízdy' , PRIMARY KEY (`id`(7))) ENGINE = InnoDB COMMENT = 'Databáze rezervovaných jízd';
