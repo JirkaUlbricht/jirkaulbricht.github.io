@@ -1,13 +1,12 @@
-
 <?php
-$servername = 'localhost';
-$username = 'root';
-$password = 'VerySecureRoot';
-$database = 'sandbox';
+$servername = 'innodb.endora.cz:3306';
+$username = 'tanksalot';
+$password = 'TanksALot2024';
+$database = 'tanksalot';
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-$debug = false; //Určeno pro kontrolu výstupu formuláře
 
+// Ověření připojení k DB
 if(!$conn) {
     $DBconnection = "Chyba připojení";
     die("Chyba připojení:<br>".mysqli_connect_error());
@@ -19,46 +18,66 @@ else {
 
 if (isset($_POST['submit'])) {
 
+    // Ověření zda uživatel měnil údaje v dropdown menu
+    $vozidla = array("Leopard A1A1", "T-34", "IS-3", "M 47", "M 48", "T-72M1", "Chieftain 2", "T-54", "Centurion");
+    $osoby = array(1,2,3);
+    $jizdy = array("Pouze jízda", "Jízda a střelba");
+    $vozSel = $_POST['vozidlo'];
+    $osSel = $_POST['osobyPoc'];
+    $jizSel = $_POST['jizda'];
+    if (!in_array($vozSel, $vozidla, $strict = false)
+        || !in_array($osSel, $osoby, $strict = false)
+        || !in_array($jizSel, $jizdy, $strict = false)) {
+        echo '<script>alert("Jedno z polí obsahuje cizí hodnotu")</script>';
+        header("Refresh:0");
+    }
+
     // Kontrola správnosti vstupu
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['name']) && isset($_POST['empNo']) && isset($_POST['password']) && is_numeric($_POST['empNo']) && strlen($_POST['empNo']) < 6) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['jmeno']) &&
+        isset($_POST['prijmeni']) && isset($_POST['telefon']) &&
+        isset($_POST['email']) && isset($_POST['vozidlo']) &&
+        isset($_POST['osobyPoc']) && isset($_POST['jizda'])) {
 
-        // Kontrola duplicity uživatelů
-        $sql_check_duplication = "SELECT id FROM uzivatel WHERE name = ? OR empNo = ?";
-        $stmt_check_duplication = mysqli_prepare($conn, $sql_check_duplication);
-        mysqli_stmt_bind_param($stmt_check_duplication, "ss", $_POST['name'], $_POST['empNo']);
-        mysqli_stmt_execute($stmt_check_duplication);
-        $result_check_duplication = mysqli_stmt_get_result($stmt_check_duplication);
+            // SQL dotaz pro vložení nového uživatele, ochráněn proti SQL injection
+            $sql_insert_rez = "INSERT INTO `jizdy` (`jmeno`, `prijmeni`, `telefon`, `email`, `vozidlo`, `osobyPoc`, `jizda`, `pozn`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            $stmt_insert_rez = mysqli_prepare($conn, $sql_insert_rez);
+            mysqli_stmt_bind_param($stmt_insert_rez, "ssssssss", $_POST['jmeno'], $_POST['prijmeni'], $_POST['telefon'], $_POST['email'], $_POST['vozidlo'], $_POST['osobyPoc'], $_POST['jizda'], $_POST['pozn']);
 
-        if (mysqli_num_rows($result_check_duplication) > 0) {
-            echo '<script>alert("Uživatel nebo zaměstnanecké číslo již existuje")</script>';
-        } else {
-            // SQL dotaz pro vložení nového uživatele
-            $sql_insert_reg = "INSERT INTO `uzivatel` (`id`, `name`, `empNo`, `password`) VALUES (NULL, ?, ?, ?)";
-            $stmt_insert_reg = mysqli_prepare($conn, $sql_insert_reg);
-            mysqli_stmt_bind_param($stmt_insert_reg, "sss", $_POST['name'], $_POST['empNo'], $hash);
-
-            // Debug výstup
-            if ($debug = true) {
-                echo "<br>Uživatelský vstup:<br>Debug: " . $_POST['debug'] . "<br>Databáze: " . $DBconnection . "<br>Jméno: " . $_POST['name'] . "<br>Zam. číslo: " . $_POST['empNo'] . " String leght: " . strlen($_POST['empNo']) . "<br>Heslo: " . $_POST['password'] . "<br>Hash: " . $hash . "<br><br>SQL příkaz: " . $sql_insert_reg . "<br><br>";
+            // Debug výstup, určeno pro kontrolu výstupu formuláře
+            $debug = "on";
+            if ($debug = "on") {
+                echo "<br>Uživatelský vstup:
+                <br>Debug: " . $debug .
+                "<br>Databáze: " . $DBconnection .
+                "<br>Jméno: " . $_POST['jmeno'] .
+                "<br>Příjmení: " . $_POST['prijmeni'] .
+                "<br>Telefon: " . $_POST['telefon'] .
+                "<br>Email: " . $_POST['email'] .
+                "<br>Vozidlo: " . $_POST['vozidlo'] .
+                "<br>Počet osob: " . $_POST['osobyPoc'] .
+                "<br>Typ jízdy: " . $_POST['jizda'] .
+                "<br>Poznámka: " . $_POST['pozn'] .
+                "<br><br>SQL příkaz: " . $sql_insert_rez . "<br><br>";
+            }
+            else {
+                echo '<script>console.log("Debug off")</script>;';
             }
 
             // Zápis dotazu do databáze
-            $newUser = mysqli_stmt_execute($stmt_insert_reg);
-            mysqli_stmt_close($stmt_insert_reg);
+            $newRez = mysqli_stmt_execute($stmt_insert_rez);
+            mysqli_stmt_close($stmt_insert_rez);
 
-            if (!$newUser) {
+            if (!$newRez) {
                 echo '<script>alert("Chyba v SQL vstupu, zkontrolujte dotaz")</script>';
             } else {
-                echo '<script>alert("Registrace proběhla úspěšně!")</script>';
+                echo '<script>alert("Rezervace proběhla úspěšně!")</script>';
             }
-        }
-
-        mysqli_stmt_close($stmt_check_duplication);
     }
-    // Kontrola max. délky čísla zaměstnance
-    elseif (strlen($_POST['empNo']) > 5) {
-        $stLn = strlen($_POST['empNo']);
-        echo '<script>alert("Zam. číslo je příliš dlouhé, musí být maximálně pěticiferné. Vaše je " . $stLn . "ciferné")</script>';
+
+
+    // Znemožňuje odeslaní prázdného formuláře
+    else {
+        echo '<script>alert("Zadejte všechny potřebné informace do formuláře")</script>';
     }
 }
 
@@ -189,7 +208,7 @@ if (isset($_POST['submit'])) {
                 </li>
                 <li>
                     <div>
-                        <div><button type="submit" class="submit">Odeslat</button></div>
+                        <div><button type="submit" name="submit" class="submit">Odeslat</button></div>
                     </div>
                 </li>
             </ul>
